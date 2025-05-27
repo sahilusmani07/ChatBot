@@ -6,8 +6,7 @@ app.use(cors());
 app.use(express.json());  
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the AI Service');
-});
+ res.redirect('/ai');});
 
 app.use('/ai', aiRoutes);
 
