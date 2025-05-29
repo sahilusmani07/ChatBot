@@ -6,9 +6,8 @@ app.use(cors());
 app.use(express.json());  
 
 app.get('/', (req, res) => {
-  res.redirect('/ai');
-});
- 
+res.redirect('/ai');});
+
 app.use('/ai', aiRoutes);
 
 module.exports = app;
